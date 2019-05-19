@@ -1,1 +1,96 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-image: url("https://agriturismoinitalia.info/wp-content/uploads/2019/01/free-3d-animated-powerpoint-templates-elegant-3d-stars-powerpoint-templates-3d-graphics-blue-free-of-free-3d-animated-powerpoint-templates.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    color: $font-color;
+    font-weight: 300;
+    font-family: $font-family-base;
+    margin-bottom: 100px; //tied to footer height
+
+    @include media-breakpoint-up(md) {
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    color: $black;
+    text-transform: none;
+    font-family: $font-family-base;
+}
+
+h7 {
+    position: relative;
+    left: 10px;
+    color: $white;
+}
+
+.thumbnail {
+    width:100%;
+    height:250px;
+    border: 1px solid black;
+    box-shadow: 2px 5px 8px #333;
+}
+
+.content
+{
+    font-family:'Open Sans';
+    margin-top:20px;
+    margin-left:25px;
+    border:4px solid #000000;
+    border-radius:5px;
+    width:25%;
+    height:330px;
+    background-color:#000000;
+
+}
+
+.flex
+{
+    display:flex;
+    justify-content:left;
+    flex-wrap:wrap;
+    margin-left:140px;
+}
+
+@media(max-width:992px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+.label, label {
+    font-weight: 400 !important;
+}
+
+// router-link-exact
+.router-link-exact-active {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
