@@ -12,8 +12,12 @@ npm install
 # запустить сервер на localhost
 pm run watch
 
-# build for production
+# build for production -> создание папки dist
 npm run build
+
+# dist directory deployment
+npm install -g serve
+serve -s dist
 
 API folder
 # установить зависимости cd api ->
