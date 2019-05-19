@@ -10,7 +10,7 @@ Web folder
 npm install
 
 # запустить сервер на localhost
-pm run watch
+npm run watch
 
 # build for production -> создание папки dist
 npm run build
