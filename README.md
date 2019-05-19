@@ -20,6 +20,8 @@ npm install -g serve
 serve -s dist
 
 API folder
+# Необходимо создать .env файл на примере example.env
+
 # установить зависимости cd api ->
 npm install
 
@@ -42,4 +44,4 @@ knex seed:make seed_users
 
 ```
 db
-Используется Knex для выполнения миграций. БД - MySQL. Необходимо создать .env файл на примере example.env
+Используется Knex для выполнения миграций. БД - MySQL. 
