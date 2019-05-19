@@ -1,0 +1,84 @@
+{
+  "name": "koa-vue-notes-api",
+  "version": "1.2.7",
+  "description": "A SPA using Koa as the backend and Vue as the frontend.",
+  "author": "John Datserakis",
+  "private": true,
+  "scripts": {
+    "watch": "set NODE_ENV=development nodemon app.js --exec",
+    "test": "set NODE_ENV=testing jest --forceExit",
+    "build": "set NODE_ENV=production babel src -d build",
+    "pretty": "prettier --write --print-width 80 --single-quote --trailing-comma es5 --tab-width 4 --no-semi 'src/**/*.js' 'tests/**/*.js'",
+    "start-production": "set NODE_ENV=production pm2 start ecosystem.json",
+    "clean": "npm cache clean --force"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/johndatserakis/koa-vue-notes-api#readme",
+  "dependencies": {
+    "@sendgrid/mail": "6.0.0",
+    "bcrypt": "^3.0.6",
+    "date-fns": "^1.29.0",
+    "dotenv": "^4.0.0",
+    "faker": "^4.1.0",
+    "fs-extra": "^4.0.3",
+    "install": "^0.10.4",
+    "ioredis": "^3.2.2",
+    "jest": "^20.0.4",
+    "joi": "^13.1.2",
+    "jsonwebtoken": "^8.2.0",
+    "kcors": "^2.0.0",
+    "knex": "^0.16.5",
+    "koa": "^2.5.0",
+    "koa-bodyparser": "^3.0.0",
+    "koa-json-error": "^3.1.2",
+    "koa-ratelimit": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "koa-useragent": "^1.0.1",
+    "log4js": "^2.5.3",
+    "mysql": "^2.15.0",
+    "npm": "^6.4.1",
+    "pm2": "^2.10.1",
+    "randexp": "^0.4.9"
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.14.1",
+    "babel-cli": "^6.5.1",
+    "babel-polyfill": "^6.5.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.9.0",
+    "nodemon": "^1.19.0",
+    "prettier": "^1.11.1",
+    "supertest": "^1.2.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "safari >= 7"
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  "keywords": [
+    "koa",
+    "koa2",
+    "api",
+    "boilerplate",
+    "vue",
+    "spa",
+    "backend",
+    "jwt",
+    "pm2",
+    "mysql",
+    "database"
+  ],
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
